@@ -1,0 +1,61 @@
+.progress-bar-container
+{
+	height: 40px;
+    border-radius: 0!important;
+    background: #fff!important;
+    border: 1px dotted #999!important;
+    margin: 20px 0;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+}
+.progress-bar-container .progress-bar.delayed {
+    background-color: #F7BA2A;
+}
+.progress-bar-container .progress-bar {
+    background-color: #13ce66;
+    width: 70%;
+    min-width: 2em;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+}
+.progress-bar-container .progress-bar:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 0;
+    animation: progress-active 2s ease infinite;
+}
+.order-box
+{
+	border: 1px solid #bfcbd9;
+    min-height: 50px;
+    padding: 15px;
+    border-radius: 2px;
+    margin: 30px auto;
+    text-align: center;
+}
+.my-table
+{
+	margin: 30px auto;
+    text-align: center;
+}
+.my-table th, .my-table td
+{
+	background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px 0px;
+	border: 1px solid #ccc;
+}
+.my-table th
+{
+	background-color: transparent;
+}
+@keyframes progress-active{0%{opacity:.5;width:0}100%{opacity:0;width:100%}}
